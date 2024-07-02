@@ -1,8 +1,8 @@
 [package]
-name = "websocket_example"
+name = "rust_websocket"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+axum = { version = "0.7.5", features = ["tokio", "http1", "ws"] }
 tokio = { version = "1", features = ["full"] }
-axum = { version = "0.5", features = ["ws"] }
